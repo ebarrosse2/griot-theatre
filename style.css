@@ -63,6 +63,7 @@ footer {
  padding-top: 30px;
  justify-content: space-evenly;
 }
+
 body {
  margin: 0px;
  padding: 0px;
@@ -89,12 +90,14 @@ ul {
  .main-title {
   position: relative
  }
- 
+
  .showfeats {
   z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 45%;
   height: 25em;
   justify-content: center;
-  position: absolute
   align-items: center;
   color: white;
   display: flex;
@@ -105,16 +108,50 @@ ul {
                 -1px -1px 0 #000
  }
 
- 
 
- .main-tile-dimension {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  color: white;
-  display: flex;
-  position: relative
-  flex-direction: row;
-  align-content: flex-start;
-  padding-bottom: 20px
+.shows-header{
+ background-color: lightgray;
+ color: black;
+ display: flex;
+ border: 10px;
+ border-style: solid;
+ border-color: black;
+ border-width: 1px;
+ padding: 1px;
+ padding-left: 60px;
  }
+
+.main-tile-dimension {
+ width: 100%;
+ height: 100%;
+ background-color: white;
+ color: black;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ padding-bottom: 20px;
+ padding-top: 20px;
+ }
+
+.shows-tile{
+ background-color: white;
+}
+
+.shows {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ width: 100%;
+}
+
+hr {
+ width: 70%;
+}
+
+.show-button {
+ background-color: orange;
+ color: white;
+}
+
